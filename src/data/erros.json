@@ -31,7 +31,7 @@
         "id": 4,
         "level": "debug",
         "descricao": "PRODUÇÃO.Debug:  user.Service.Auth:Password",
-        "origem": "10.20.1.253",
+        "origem": "10.20.1.252",
         "data": 1584333876816,
         "eventos": 56
       }
