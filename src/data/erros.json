@@ -1,0 +1,140 @@
+[
+  {
+    "id": 1,
+    "ambiente": "producao",
+    "erros": [
+      {
+        "id": 1,
+        "level": "error",
+        "descricao": "PRODUÇÃO.Error: acceleration.Service.AddCandidate:acceleration.MongoRepository.Add",
+        "origem": "app.server.com.br",
+        "data": 1584273876815,
+        "eventos": 200
+      },
+      {
+        "id": 2,
+        "level": "wanring",
+        "descricao": "PRODUÇÃO.Warning: user.Service.Auth:Password.Password.Compare:crypto/bcrypt:hashed",
+        "origem": "127.200.19.1",
+        "data": 1563285424468,
+        "eventos": 1300
+      },
+      {
+        "id": 3,
+        "level": "debug",
+        "descricao": "PRODUÇÃO.Debug: acceleration.Detail:<not_found>",
+        "origem": "10.0.1.50",
+        "data": 1584348876813,
+        "eventos": 34
+      },
+      {
+        "id": 4,
+        "level": "debug",
+        "descricao": "PRODUÇÃO.Debug:  user.Service.Auth:Password",
+        "origem": "10.20.1.253",
+        "data": 1584333876816,
+        "eventos": 56
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "ambiente": "homologacao",
+    "erros": [
+      {
+        "id": 1,
+        "level": "error",
+        "descricao": "HOMOLOGACAO.Error:acceleration.Service.AddCandidate:acceleration.MongoRepository.Add",
+        "origem": "127.200.19.1",
+        "data": 1584423876817,
+        "eventos": 67
+      },
+      {
+        "id": 2,
+        "level": "wanring",
+        "descricao": "HOMOLOGACAO.Warning:user.Service.Auth:Password.Password.Compare:crypto/bcrypt:hashed",
+        "origem": "127.0.50.1",
+        "data": 1584468876822,
+        "eventos": 349
+      },
+      {
+        "id": 3,
+        "level": "debug",
+        "descricao": "HOMOLOGACAO.Debug:acceleration.Detail:<not_found",
+        "origem": "dev.server.com.br",
+        "data": 1584483876822,
+        "eventos": 982
+      },
+      {
+        "id": 4,
+        "level": "debug",
+        "descricao": "HOMOLOGACAO.Debug:acceleration.Detail:<not_found",
+        "origem": "dev.server.com.br",
+        "data": 1584453876814,
+        "eventos": 982
+      },
+      {
+        "id": 5,
+        "level": "debug",
+        "descricao": "HOMOLOGACAO.Debug:acceleration.Detail:<not_found",
+        "origem": "dev.server.com.br",
+        "data": 1584348876813,
+        "eventos": 982
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "ambiente": "dev",
+    "erros": [
+      {
+        "id": 1,
+        "level": "error",
+        "descricao": "DEV.Error: acceleration.Service.AddCandidate:acceleration.MongoRepository.Add",
+        "origem": "appinc.server.org",
+        "data": 1584483876822,
+        "eventos": 1560
+      },
+      {
+        "id": 2,
+        "level": "wanring",
+        "descricao": "DEV.Warning: user.Service.Auth:Password.Password.Compare:crypto/bcrypt:hashed",
+        "origem": "127.10.1.2",
+        "data": 1584393876813,
+        "eventos": 402
+      },
+      {
+        "id": 3,
+        "level": "debug",
+        "descricao": "DEV.Debug: acceleration.Detail:<not_found",
+        "origem": "appinc.server.org",
+        "data": 1584453876814,
+        "eventos": 602
+      },
+      {
+        "id": 4,
+        "level": "error",
+        "descricao": "DEV.Error: acceleration.Service.AddCandidate:acceleration.MongoRepository.Add",
+        "origem": "appinc.server.org",
+        "data": 1584483876822,
+        "eventos": 1560
+      },
+      {
+        "id": 5,
+        "level": "wanring",
+        "descricao": "DEV.Warning: user.Service.Auth:Password.Password.Compare:crypto/bcrypt:hashed",
+        "origem": "127.10.1.2",
+        "data": 1584393876813,
+        "eventos": 402
+      },
+      {
+        "id": 6,
+        "level": "debug",
+        "descricao": "DEV.Debug: acceleration.Detail:<not_found",
+        "origem": "appinc.server.org",
+        "data": 1584453876814,
+        "eventos": 602
+      }
+    ]
+  }
+]
