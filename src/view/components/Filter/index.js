@@ -59,16 +59,16 @@ export default function Filter({
   onChangeLink,
   onChangeOrder,
   onchangeBuscar,
-  onChangeInput
+  onChangeInput,
 }) {
   return (
     <Container>
       <SelectContainer>
         <Select
-          opcao1="producao"
-          opcao2="homologacao"
-          opcao3="dev"
-          opcao4="vago"
+          opcao1="Escolha um ambiente"
+          opcao2="Produção"
+          opcao3="Homologação"
+          opcao4="Dev"
           onChange={onChangeLink}
         />
         <Select
