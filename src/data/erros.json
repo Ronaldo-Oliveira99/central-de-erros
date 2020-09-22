@@ -6,7 +6,7 @@
       {
         "id": 1,
         "level": "error",
-        "descricao": "PRODUÇÃO.Error: acceleration.Service.AddCandidate:acceleration.MongoRepository.Add",
+        "descricao": "PRODUÇÃO.Error: accelerationDEEV.Service.AddCandidate:acceleration.MongoRepository.Add",
         "origem": "app.server.com.br",
         "data": 1584273876815,
         "eventos": 200
