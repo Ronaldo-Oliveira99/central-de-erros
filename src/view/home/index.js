@@ -27,6 +27,7 @@ function Home() {
   // Primeira caixa de seleção "ESCOLHA UM AMBIENTE"
   const handleSelected = (e) => {
     const valor = e.target.value;
+    console.log("valor", valor);
     dispatch({ type: "SELECT_ERROS", valor });
   };
   // selecionar itens
@@ -43,7 +44,7 @@ function Home() {
     console.log("valor", valor);
     dispatch({ type: "ORDENAR_FREQUENCIA", valor });
   };
-  //console.log("testeState", testeState);
+
   //console.log("erroAmbient", erroAmbient);
   console.log("CheckedButton", Checked);
 

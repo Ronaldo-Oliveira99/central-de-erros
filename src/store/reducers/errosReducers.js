@@ -16,7 +16,7 @@ const ErrosReducer = (state = initialState, action) => {
 
     case "GET_ERROS":
       const erro = datas; //datas= objeto json trazido pela função  api()
-      const initiaError = erro[1].erros; // inicia a tela com os dados objeto de datas [2].erros[] -> id 1, id2...
+      const initiaError = erro[0].erros; // inicia a tela com os dados objeto de datas [2].erros[] -> id 1, id2...
       return {
         ...state,
         erroList: erro, // objeto json de erros

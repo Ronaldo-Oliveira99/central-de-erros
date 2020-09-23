@@ -1,6 +1,43 @@
-[
+[{
+  "id": 1,
+  "ambiente": "producao",
+  "erros": [
+    {
+      "id": 1,
+      "level": "error",
+      "descricao": "PRODUÇÃO.Error: accelerationDEEV.Service.AddCandidate:acceleration.MongoRepository.Add",
+      "origem": "app.server.com.br",
+      "data": 1584273876815,
+      "eventos": 200
+    },
+    {
+      "id": 2,
+      "level": "wanring",
+      "descricao": "PRODUÇÃO.Warning: user.Service.Auth:Password.Password.Compare:crypto/bcrypt:hashed",
+      "origem": "127.200.19.1",
+      "data": 1563285424468,
+      "eventos": 1300
+    },
+    {
+      "id": 3,
+      "level": "debug",
+      "descricao": "PRODUÇÃO.Debug: acceleration.Detail:<not_found>",
+      "origem": "10.0.1.50",
+      "data": 1584348876813,
+      "eventos": 34
+    },
+    {
+      "id": 4,
+      "level": "debug",
+      "descricao": "PRODUÇÃO.Debug:  user.Service.Auth:Password",
+      "origem": "10.20.1.252",
+      "data": 1584333876816,
+      "eventos": 56
+    }
+  ]
+},
   {
-    "id": 1,
+    "id": 2,
     "ambiente": "producao",
     "erros": [
       {
@@ -38,7 +75,7 @@
     ]
   },
   {
-    "id": 2,
+    "id": 3,
     "ambiente": "homologacao",
     "erros": [
       {
@@ -84,7 +121,7 @@
     ]
   },
   {
-    "id": 3,
+    "id": 4,
     "ambiente": "dev",
     "erros": [
       {
