@@ -1,68 +1,72 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## ★ Central de Erros
+Codenation -> Kroton
 
-## Available Scripts
+## ⊕ About this project
+Project made in codenation and kroton bootcamp
+ 
+## ⌨ Technology 
+Here are the technologies used in this project.
+* React 
+* Javascript
+* CSS
+* HTML
 
-In the project directory, you can run:
+ 
+ 
+## ☂ Services Used
+* Github
+* Netlify
+ 
+ 
+## ☂ Librarys 
+* styled-components
+* redux
+ 
+## ▶ Getting started
+ * Clone this repository:
+>   git clone https://github.com/Ronaldo-Oliveira99/central-de-erros
+* To install:
+>   npm install
+* To run the project:
+>   npm start 
+ 
+## ？How to use
+After entering a name, this is the home screen with all errors.
+ ![First_screnn](https://github.com/Ronaldo-Oliveira99/central-de-erros/blob/master/public/readme_img/initial.png?raw=true)
 
-### `yarn start`
+Brings errors by environments
+ ![choice_ambientes_screnn](https://github.com/Ronaldo-Oliveira99/central-de-erros/blob/master/public/readme_img/select%20ambiente.png?raw=true)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Sort errors by level or number of events. 
+ ![sort_errors_screnn](https://github.com/Ronaldo-Oliveira99/central-de-erros/blob/master/public/readme_img/ordenar%20por.png?raw=true)
+ 
+For a more advanced search, select the type of search in the field "Busca_por" and type the search in the input. 
+![advanced_serch_screnn](https://github.com/Ronaldo-Oliveira99/central-de-erros/blob/master/public/readme_img/buscar%20por.png?raw=true)
+ 
+After defining the search type and typing in the input, the sister will perform an advanced search.
+![advanced search_screnn2](https://github.com/Ronaldo-Oliveira99/central-de-erros/blob/master/public/readme_img/input%20buscar%20por.png?raw=true)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+The system brings detailed information about each error, clicking on a line
+![error_detail](https://github.com/Ronaldo-Oliveira99/central-de-erros/blob/master/public/readme_img/clique%20na%20linha.png?raw=true)
 
-### `yarn test`
+brings out of each detailed error
+![error_detail2](https://github.com/Ronaldo-Oliveira99/central-de-erros/blob/master/public/readme_img/detalhes%20erros.png?raw=true)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+ 
+ 
+## ≎ Links
+ 
+  - Link of deployed application: https://aluraquiz-react-nextjs.ronaldo-oliveira99.vercel.app/
+  - Repository:https://github.com/Ronaldo-Oliveira99/central-de-erros
+ 
+ 
+## Versioning
+0.1.1
+ 
+ 
+## Authors
+* **RONALDO LUIZ**: @Ronaldo-Oliveira99 (https://github.com/Ronaldo-Oliveira99)
+ 
+ 
+Please follow github and join us!
+❤ Thanks to visiting me and good coding!
