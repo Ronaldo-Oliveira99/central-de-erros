@@ -7,9 +7,9 @@ import {
 
 /* Páginas */
 
-import Home from "../view/Home";
-import Erros from "../view/Erros";
-import Welcome from "../view/Welcome";
+import Home from "../view/Home/index.js";
+import Erros from "../view/Erros/index.js";
+import Welcome from "../view/Welcome/index.js";
 
 const Routes = () => (
   <Router>
