@@ -1,20 +1,24 @@
-/* Este é o estado inicial do reducer de usuário ou seja o estado de usuário 
-   deslogado */
-const INITIAL_STATE = {
-  usuarioEmail: '',
-  usuarioLogado: 0,
-  usuarioHash: '',
+const initialState = {
+    nameUser: "",
+    libButton: false
+ 
 };
 
-function usuarioReducer(state = INITIAL_STATE, action) {
-  switch (action.type) {
-    case 'LOG_IN':
-      return { ...state, usuarioLogado: 1, usuarioEmail: action.usuarioEmail, usuarioHash: action.usuarioHash }
-    case 'LOG_OUT':
-      return { ...state, usuarioLogado: 0, usuarioEmail: null, usuarioHash: null }
-    default:
-      return state;
-  }
-}
+const usuarioReducer = (state = initialState, action) => {
+  const { type, inputChange } = action;
+  switch (type) {
+    case "NAME_USER":
+      const storeName = inputChange;
+      console.log("Users", storeName);
+
+      return {
+        ...state,
+        nameUser: storeName,
+      };
+
+      default:
+        return state;
+      }
+    };
 
 export default usuarioReducer;

@@ -1,49 +1,50 @@
 import React from "react";
-import styled from "styled-components";
 
-const OptionsContainer = styled.div`
-  padding-bottom: 7px;
-`;
 
-const Select = styled.select`
-  width: 150px;
-  height: 25px;
-  background: white;
-  color: gray;
-  padding-left: 5px;
-  font-size: 14px;
-  border: none;
-  margin-left: 10px;
-  border-radius: 4px;
-  @media only screen and (max-width: 660px) {
-    width: 250px;
-  }
-
-  option {
-    color: black;
-    background: white;
-    display: flex;
-    white-space: pre;
-    min-height: 20px;
-    padding: 0px 2px 1px;
-    border-radius: 4px;
-  }
-`;
-function Selects({ opcao1, opcao2, opcao3, opcao4, onChange, type }) {
+function SelAmbient({ opcao1, opcao2, opcao0,opcao3,opcao4, onChange}) {
   return (
-    <OptionsContainer>
-      <Select onChange={onChange}>
-        {/* <option value="" hidden>
-          {type}
-        </option> */}
-        {/* <option value="">{opcao0}</option> */}
-        <option value={0}>{opcao1}</option>
-        <option value={1}>{opcao2}</option>
-        <option value={2}>{opcao3}</option>
-        <option value={3}>{opcao4}</option>
-      </Select>
-    </OptionsContainer>
+
+  <div className="col-12 col-sm-4 col-md-4 col-lg-3 ms-lg-4">
+    <label htmlFor="ambiente">Ambiente</label>
+    <select onChange={onChange} className="form-select form-select-sm " id="ambiente">
+      <option value={0}>{opcao0}</option>
+      <option value={1}>{opcao1}</option>
+      <option value={2}>{opcao2}</option>
+      <option value={3}>{opcao3}</option>
+      {/* <option value={4}>{opcao4}</option> */}
+    </select>
+  </div>
+  
   );
 }
 
-export default Selects;
+function SelOrdenar({ opcao0, opcao1, opcao2, onChange}) {
+  return (
+
+    <div className="col-12 col-sm-4 col-md-4 col-lg-2">
+      <label htmlFor="ordenar">Ordenar Por:</label>
+      <select onChange={onChange} className="form-select form-select-sm" id="ordenar">
+        <option value={0}>{opcao0}</option>
+        <option value={1}>{opcao1}</option>
+        <option value={2}>{opcao2}</option>
+      </select>
+    </div>
+  );
+}
+
+
+function SelBuscar({ opcao0,opcao1, opcao2, opcao3, onChange }) {
+  return (
+    <div className="col-12 col-sm-4 col-md-4 col-lg-2">
+      <label htmlFor="buscar">Buscar Por:</label>
+        <select onChange={onChange} className="form-select form-select-sm" id="buscar">
+        <option value={0}>{opcao0}</option>
+        <option value={1}>{opcao1}</option>
+        <option value={2}>{opcao2}</option>
+        <option value={3}>{opcao3}</option>
+      </select>
+    </div>
+  );
+}
+
+export  {SelAmbient,SelOrdenar,SelBuscar}

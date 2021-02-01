@@ -5,7 +5,7 @@ import errosReducer from "./reducers/errosReducers";
 
 const rootReducer = combineReducers({
   erros: errosReducer,
-  usuarioReducer
+  login: usuarioReducer
 });
 
 const store = createStore(rootReducer);

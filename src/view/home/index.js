@@ -1,98 +1,133 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import Filter from "../components/Filter";
-import { Button, ButtonGroup } from "../components/Button";
 import { TableBody, TableHead } from "../components/Table";
-import { Card, CardHeader, CardBody } from "../components/Card";
+import Card from "../components/Card";
 import Loading from "../components/Loading";
-import { formatDate } from "../../utils";
+import TokenUser from "../components/TokenUser";
+import { FormatDate } from "../../utils";
 import api from "../../api";
 
 function Home() {
   const dispatch = useDispatch();
-  // Trás informações do state para utilização
-  const { erroAmbient } = useSelector(({ erros }) => erros);
+  // Traz informações do state para utilização
+  const { errosRender } = useSelector(({ erros }) => erros);
   const { loading } = useSelector(({ erros }) => erros);
-  const { Checked } = useSelector(({ erros }) => erros);
-  const { testeState } = useSelector(({ erros }) => erros);
+  const { libInput } = useSelector(({ erros }) => erros);
+  const { checkedAll } = useSelector(({ erros }) => erros);
+  const { nameUser } = useSelector(({ login }) => login);
 
-  const [input, setInput] = useState("");
+  const [validacao, setValidacao] = useState(false);
 
   useEffect(() => {
     // Obtem um json de erros e manda para um state inicial
-    api().then((datas) => {
-      dispatch({ type: "GET_ERROS", datas });
-    });
+    function getApi(){
+        api().then((datas) => {
+        dispatch({ type: "GET_ERROS", datas });
+      });
+    }
+    getApi()
   }, [dispatch]);
+
   // Primeira caixa de seleção "ESCOLHA UM AMBIENTE"
   const handleSelected = (e) => {
     const valor = e.target.value;
-    console.log("valor", valor);
+    console.log("valortypefora", typeof valor);
     dispatch({ type: "SELECT_ERROS", valor });
-  };
-  // selecionar itens
-  const onCheck = (index) => {
-    dispatch({ type: "CHECK_ERROS", index });
-  };
-  // deletar itens
-  const deleteHandler = () => {
-    dispatch({ type: "DELETE_ERROS", Checked });
   };
   //Segunda caixa de seleção "ORDENAR POR"
   const onHandleOrder = (e) => {
-    const valor = e.target.value;
-    console.log("valor", valor);
-    dispatch({ type: "ORDENAR_FREQUENCIA", valor });
+    const ordemValor = e.target.value;
+    //console.log("valorFora", ordemValor);
+    dispatch({ type: "ORDENAR_FREQUENCIA", ordemValor });
+  };
+  //Terceira caixa de seleção "Buscar Por"
+  const onHandleBuscar = (e) => {
+    const buscarPor = e.target.value;
+    dispatch({ type: "BUSCAR_POR", buscarPor });
   };
 
-  //console.log("erroAmbient", erroAmbient);
-  console.log("CheckedButton", Checked);
+  //Input
+  const handleChangeInput = (e) => {
+    const inputChange = e.target.value;
+    libInput
+      ? dispatch({ type: "SEARCH_ERROS", inputChange })
+      : inputChange === ""
+      ? setValidacao(false)
+      : setValidacao(true);
 
-  // const handleChangeInput = e => {
-  //   const valorInput = e.target.value;
-  //   // setInput(valorInput);
-  //   dispatch({ type: "SEARCH_ERROS", valorInput });
-  // };
-  // console.log("erroList", erroList);
+    
+  };
+
+  // deletar itens
+  const deleteHandler = () => {
+    dispatch({ type: "DELETE_ARQUIVAR_ERROS" });
+  };
+
+  const arquivarHandler = () => {
+    let flagArquivar = true;
+    dispatch({ type: "DELETE_ARQUIVAR_ERROS", flagArquivar });
+  };
+
+  // checkbox Itens
+  const handleCheckItem = (e, index) => {
+    let checkItm = e.target.checked;
+    dispatch({ type: "CHECK_ERROS", index, checkItm });
+  };
+
+  // checkbox All
+  const handleCheckAllItem = (e) => {
+    let checkAll = e.target.checked;
+    dispatch({ type: "CHECK_ALL", checkAll });
+  };
 
   return (
-    <div>
-      <Card>
-        <CardHeader>
-          <Filter
-            //Setor dos filtros de seleção e Buscas
-            onChangeLink={handleSelected}
-            onChangeOrder={onHandleOrder}
-            // onChangeInput={handleChangeInput}
+    <Card className="container">
+      <TokenUser user={nameUser}/>
+      <Filter
+        //Setor dos filtros de seleção e Buscas
+        onChangeLink={handleSelected}
+        onChangeOrder={onHandleOrder}
+        onChangeBuscar={onHandleBuscar}
+        onChangeInput={handleChangeInput}
+        deleteHandler={() => deleteHandler()}
+        arquivarHandler={() => arquivarHandler()}
+        validInput={validacao}
+        validBorder={validacao}
+       
+        
+       
+      />
+      <div className="table-responsive">
+        <table className="table table-secondary table-hover">
+          <TableHead
+            onChangeHead={(e) => handleCheckAllItem(e)}
+            isChecked={checkedAll}
           />
 
-          <ButtonGroup>
-            {/* Botões usados para arquivar e deletar*/}
-            <Button>Arquivar </Button>
-            <Button onClick={() => deleteHandler()}>Apagar</Button>
-          </ButtonGroup>
-        </CardHeader>
-        <CardBody>
-          <TableHead />
           {loading ? (
             <Loading />
           ) : (
-            /* Cards com as informações trazidas*/
-            erroAmbient.map((err, index) => (
-              <TableBody
-                key={index}
-                level={err.level}
-                descricao={err.descricao}
-                origem={err.origem}
-                data={formatDate(err.data)}
-                eventos={err.eventos}
-                handleCheckElement={() => onCheck(index)}
-              />
-            ))
+            errosRender.map((error, index) => {
+              return (
+                <TableBody
+                  data={error}
+                  key={index}
+                  isChecked={error.done}
+                  level={error.level}
+                  descricao={error.descricao}
+                  eventos={error.eventos}
+                  origem={error.origem}
+                  date={FormatDate(error.data)}
+                  onChange={(e) => handleCheckItem(e, index)}
+                  ambients={error.id}
+                />
+              );
+            })
           )}
-        </CardBody>
-      </Card>
-    </div>
+        </table>
+      </div>
+    </Card>
   );
 }
 

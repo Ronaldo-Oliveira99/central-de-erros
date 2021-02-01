@@ -4,173 +4,165 @@
   "erros": [
     {
       "id": 1,
-      "level": "error",
+      "level": "warning",
       "descricao": "PRODUÇÃO.Error: accelerationDEEV.Service.AddCandidate:acceleration.MongoRepository.Add",
+      "detalhes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "origem": "app.server.com.br",
-      "data": 1584273876815,
-      "eventos": 200
+      "data": 1601714015351,
+      "eventos": 200,
+      "done":false
     },
     {
       "id": 2,
-      "level": "wanring",
+      "level": "error",
       "descricao": "PRODUÇÃO.Warning: user.Service.Auth:Password.Password.Compare:crypto/bcrypt:hashed",
+      "detalhes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "origem": "127.200.19.1",
-      "data": 1563285424468,
-      "eventos": 1300
+      "data": 1601811215351,
+      "eventos": 1300,
+      "done":false
     },
     {
       "id": 3,
       "level": "debug",
-      "descricao": "PRODUÇÃO.Debug: acceleration.Detail:<not_found>",
+      "descricao": "PRODUÇÃO.Debug: testeacceleration.Detail:<not_found>",
+      "detalhes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "origem": "10.0.1.50",
-      "data": 1584348876813,
-      "eventos": 34
+      "data": 1601904815351,
+      "eventos": 34,
+      "done":false
     },
     {
       "id": 4,
-      "level": "debug",
+      "level": "error",
       "descricao": "PRODUÇÃO.Debug:  user.Service.Auth:Password",
+      "detalhes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "origem": "10.20.1.252",
-      "data": 1584333876816,
-      "eventos": 56
+      "data": 1601998415351,
+      "eventos": 56,
+      "done":false
     }
   ]
 },
   {
     "id": 2,
-    "ambiente": "producao",
+    "ambiente": "homologacao",
     "erros": [
       {
-        "id": 1,
-        "level": "error",
-        "descricao": "PRODUÇÃO.Error: accelerationDEEV.Service.AddCandidate:acceleration.MongoRepository.Add",
-        "origem": "app.server.com.br",
-        "data": 1584273876815,
-        "eventos": 200
-      },
-      {
-        "id": 2,
-        "level": "wanring",
-        "descricao": "PRODUÇÃO.Warning: user.Service.Auth:Password.Password.Compare:crypto/bcrypt:hashed",
+        "id": 5,
+        "level": "debug",
+        "descricao": "HOMOLOGACAO.Error:acceleration.Service.AddCandidate:acceleration.MongoRepository.Add",
+        "detalhes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         "origem": "127.200.19.1",
-        "data": 1563285424468,
-        "eventos": 1300
+        "data": 1602092015351,
+        "eventos": 67,
+        "done":false
       },
       {
-        "id": 3,
-        "level": "debug",
-        "descricao": "PRODUÇÃO.Debug: acceleration.Detail:<not_found>",
-        "origem": "10.0.1.50",
-        "data": 1584348876813,
-        "eventos": 34
+        "id": 6,
+        "level": "error",
+        "descricao": "HOMOLOGACAO.Warning:user.Service.Auth:Password.Password.Compare:crypto/bcrypt:hashed",
+        "detalhes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "origem": "127.0.50.1",
+        "data": 1602185615351,
+        "eventos": 103,
+        "done":false
       },
       {
-        "id": 4,
+        "id": 7,
+        "level": "warning",
+        "descricao": "HOMOLOGACAO.Debug1:acceleration.Detail:<not_found",
+        "detalhes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "origem": "dev.server.com.br",
+        "data": 1602279215351,
+        "eventos": 980,
+        "done":false
+      },
+      {
+        "id": 8,
         "level": "debug",
-        "descricao": "PRODUÇÃO.Debug:  user.Service.Auth:Password",
-        "origem": "10.20.1.252",
-        "data": 1584333876816,
-        "eventos": 56
+        "descricao": "HOMOLOGACAO.Debug2:acceleration.Detail:<not_found",
+        "detalhes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "origem": "dev.server.com.br",
+        "data": 1602372815351,
+        "eventos": 349,
+        "done":false
+      },
+      {
+        "id": 9,
+        "level": "error",
+        "descricao": "HOMOLOGACAO.Debug3:acceleration.Detail:<not_found",
+        "detalhes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "origem": "dev.server.com.br",
+        "data": 1602380015351,
+        "eventos": 50,
+        "done":false
       }
     ]
   },
   {
     "id": 3,
-    "ambiente": "homologacao",
-    "erros": [
-      {
-        "id": 1,
-        "level": "error",
-        "descricao": "HOMOLOGACAO.Error:acceleration.Service.AddCandidate:acceleration.MongoRepository.Add",
-        "origem": "127.200.19.1",
-        "data": 1584423876817,
-        "eventos": 67
-      },
-      {
-        "id": 2,
-        "level": "wanring",
-        "descricao": "HOMOLOGACAO.Warning:user.Service.Auth:Password.Password.Compare:crypto/bcrypt:hashed",
-        "origem": "127.0.50.1",
-        "data": 1584468876822,
-        "eventos": 349
-      },
-      {
-        "id": 3,
-        "level": "debug",
-        "descricao": "HOMOLOGACAO.Debug:acceleration.Detail:<not_found",
-        "origem": "dev.server.com.br",
-        "data": 1584483876822,
-        "eventos": 982
-      },
-      {
-        "id": 4,
-        "level": "debug",
-        "descricao": "HOMOLOGACAO.Debug:acceleration.Detail:<not_found",
-        "origem": "dev.server.com.br",
-        "data": 1584453876814,
-        "eventos": 982
-      },
-      {
-        "id": 5,
-        "level": "debug",
-        "descricao": "HOMOLOGACAO.Debug:acceleration.Detail:<not_found",
-        "origem": "dev.server.com.br",
-        "data": 1584348876813,
-        "eventos": 982
-      }
-    ]
-  },
-  {
-    "id": 4,
     "ambiente": "dev",
     "erros": [
       {
-        "id": 1,
+        "id": 10,
         "level": "error",
         "descricao": "DEV.Error: acceleration.Service.AddCandidate:acceleration.MongoRepository.Add",
+        "detalhes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         "origem": "appinc.server.org",
-        "data": 1584483876822,
-        "eventos": 1560
+        "data": 1602380015351,
+        "eventos": 211,
+        "done":false
       },
       {
-        "id": 2,
-        "level": "wanring",
+        "id": 11,
+        "level": "warning",
         "descricao": "DEV.Warning: user.Service.Auth:Password.Password.Compare:crypto/bcrypt:hashed",
+        "detalhes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         "origem": "127.10.1.2",
-        "data": 1584393876813,
-        "eventos": 402
+        "data": 1602473615351,
+        "eventos": 23,
+        "done":false
       },
       {
-        "id": 3,
+        "id": 12,
         "level": "debug",
         "descricao": "DEV.Debug: acceleration.Detail:<not_found",
+        "detalhes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         "origem": "appinc.server.org",
-        "data": 1584453876814,
-        "eventos": 602
+        "data": 1602565535351,
+        "eventos": 238,
+        "done":false
       },
       {
-        "id": 4,
+        "id": 13,
         "level": "error",
         "descricao": "DEV.Error: acceleration.Service.AddCandidate:acceleration.MongoRepository.Add",
+        "detalhes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         "origem": "appinc.server.org",
-        "data": 1584483876822,
-        "eventos": 1560
+        "data": 1602659741330,
+        "eventos": 1560,
+        "done":false
       },
       {
-        "id": 5,
-        "level": "wanring",
+        "id": 14,
+        "level": "warning",
         "descricao": "DEV.Warning: user.Service.Auth:Password.Password.Compare:crypto/bcrypt:hashed",
+        "detalhes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         "origem": "127.10.1.2",
-        "data": 1584393876813,
-        "eventos": 402
+        "data": 1602753824333,
+        "eventos": 39,
+        "done":false
       },
       {
-        "id": 6,
+        "id": 15,
         "level": "debug",
         "descricao": "DEV.Debug: acceleration.Detail:<not_found",
+        "detalhes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         "origem": "appinc.server.org",
-        "data": 1584453876814,
-        "eventos": 602
+        "data": 1602848541333,
+        "eventos": 69,
+        "done":false
       }
     ]
   }

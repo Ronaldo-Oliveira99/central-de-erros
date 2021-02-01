@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import "font-awesome/css/font-awesome.css";
 
 export default createGlobalStyle`
    @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');

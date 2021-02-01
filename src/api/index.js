@@ -8,7 +8,7 @@ function api() {
       // } else {
       //   resolve(threads);
       // }
-    }, 1500);
+    }, 4500);
   });
 }
 

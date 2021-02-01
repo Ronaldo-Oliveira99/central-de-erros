@@ -1,19 +1,16 @@
-import styled from "styled-components";
+import React from "react";
 
-const Button = styled.button`
-  height: 35px;
-  margin-left: 10px;
-  border-radius: 4px;
-`;
+function Buttons({ deleteHandler, arquivarHandler}) {
+  return (
+   <div className="m-3">
 
-const ButtonGroup = styled.div`
-  margin: 10px 0;
-  width: 90%;
-  display: flex;
+     <button onClick={arquivarHandler}  className="btn btn-primary m-2">Arquivar</button>
+     <button onClick={deleteHandler} className="btn btn-warning">Apagar</button>
 
-  @media only screen and (max-width: 660px) {
-    justify-content: space-around;
-  }
-`;
+   </div>
+     
+  );
+}
 
-export { Button, ButtonGroup };
+
+export default Buttons ;

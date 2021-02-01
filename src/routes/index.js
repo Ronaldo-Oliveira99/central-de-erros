@@ -1,25 +1,25 @@
-/* Arquivo de Configuração de Rotas  */
 import React from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
 
 /* Páginas */
 
-import Home from "../view/home";
+import Home from "../view/Home";
+import Erros from "../view/Erros";
+import Welcome from "../view/Welcome";
 
 const Routes = () => (
-  <BrowserRouter>
+  <Router>
     <Switch>
-      <Route exact path="/" component={Home} />
-      {/* <Route exact path="/novousuario" component={NovoUsuario} />
-      <Route
-        exact
-        path="/usuariorecuperarsenha"
-        component={UsuarioRecuperarSenha}
-      />
-      <Route exact path="/home" component={Home} />
-      <Route exact path="/home/:ambients" component={Home} /> */}
+      <Route exact path="/" component={Welcome} />
+      <Route path="/app" component={Home} />
+      <Route path="/home/:ambients" component={Erros} />
+      <Route path="*" component={()=> <h1>Page not found</h1>} />
     </Switch>
-  </BrowserRouter>
+  </Router>
 );
 
 export default Routes;
